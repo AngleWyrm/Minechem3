@@ -21,12 +21,7 @@ public enum EnumMolecule {
         nitrogenDioxide                 (3, "Nitrogen Dioxide", new Element(N), new Element(O,2)),
         toluene                                 (4, "Toluene", new Element(C,7), new Element(H,8)),
         potassiumNitrate                (5, "Potassium Nitrate", new Element(K), new Element(N), new Element(O,3)),
-        tnt                                     (6, "Trinitrotoluene",
-                        new Element(C,6),
-                        new Element(H,2),
-                        new Molecule(nitrogenDioxide, 3),
-                        new Molecule(toluene)
-                        ),
+        tnt                                     (6, "Trinitrotoluene", new Element(C,6), new Element(H,2), new Molecule(nitrogenDioxide, 3), new Molecule(toluene)),
         siliconDioxide                  (7, "Silicon Dioxide", new Element(Si), new Element(O,2)),
         calcite                                 (8, "Calcite", new Element(Ca), new Element(C), new Element(O,3)),
         pyrite                                  (9, "Pyrite", new Element(Fe), new Element(S,2)),
@@ -116,7 +111,7 @@ public enum EnumMolecule {
         nod                                     (91, "Nodularin", new Element(C,41), new Element(H,60), new Element(N,8), new Element(O,10)),
         potato                  (92, "Digoxin", new Element(C,41), new Element(H,64), new Element(O,14)),
         ttx                     (93, "TTX (Tetrodotoxin)", new Element(C,11), new Element(H,11), new Element(N,3), new Element(O,8)),
-    afroman                 (94, "THC (Weed)", new Element(C,21), new Element(H,30), new Element(O,2)),
+        afroman                 (94, "THC (Weed)", new Element(C,21), new Element(H,30), new Element(O,2)),
         mt                      (95, "Methylcyclopentadienyl Manganese Tricarbonyl", new Element(C,9), new Element(H,7), new Element(Mn,1), new Element(O,3)), // Level 1
         buli                    (96, "Tert-Butyllithium", new Element(Li,1), new Element(C,4), new Element (H,9)), // Level 2
         plat                    (97, "Chloroplatinic acid", new Element(H,2), new Element(Pt,1), new Element(Cl,6)), // Level 3
@@ -124,6 +119,7 @@ public enum EnumMolecule {
         aalc                    (99, "Allyl alcohol", new Element(C,3), new Element(H,6), new Element(O,1)),
         hist                    (100, "Diphenhydramine", new Element(C,17), new Element(H,21), new Element(N), new Element(O)),
         pal2 (101, "Batrachotoxin", new Element(C,31), new Element(H,42), new Element(N,2), new Element(O,6))
+        ctx (102, "Ciguatoxin CTX 1", new Element(C,60), new Element(H,64), new Element(H,22), new Element(O,19)),
        ;
        
         public static EnumMolecule[] molecules = values();
