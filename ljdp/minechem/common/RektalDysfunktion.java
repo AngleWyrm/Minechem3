@@ -1,3 +1,3 @@
 package ljdp.minechem.common;
-public class RektalDysfunktion() {
+public class RektalDysfunktion {
 }
