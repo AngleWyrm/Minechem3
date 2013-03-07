@@ -226,8 +226,7 @@ public class MinechemHelper {
     	case testosterone:
     		entityPlayer.addPotionEffect(new PotionEffect(Potion.damageBoost.getId(), Constants.TICKS_PER_MINUTE * 5, 2));
     		entityPlayer.addPotionEffect(new PotionEffect(Potion.moveSpeed.getId(),   Constants.TICKS_PER_MINUTE * 5, 0));
-    		if(random.nextFloat() < .2F)
-    		entityPlayer.attackEntityFrom(DamageSource.generic, 10);
+    	        
     		break;
 	    case xanax:
 	    	cureAllPotions(world, entityPlayer); 
@@ -235,26 +234,26 @@ public class MinechemHelper {
 	    	entityPlayer.addPotionEffect(new PotionEffect(Potion.moveSlowdown.getId(), Constants.TICKS_PER_SECOND * 30, 2));
 	    	break;
 		case mescaline: 
-			entityPlayer.attackEntityFrom(DamageSource.generic, 2);
-			entityPlayer.addPotionEffect(new PotionEffect(Potion.confusion.getId(), Constants.TICKS_PER_SECOND * 30, 2));
-			entityPlayer.addPotionEffect(new PotionEffect(Potion.blindness.getId(), Constants.TICKS_PER_SECOND * 30, 2));
-			break;
+		entityPlayer.attackEntityFrom(DamageSource.generic, 2);
+		entityPlayer.addPotionEffect(new PotionEffect(Potion.confusion.getId(), Constants.TICKS_PER_SECOND * 30, 2));
+		entityPlayer.addPotionEffect(new PotionEffect(Potion.blindness.getId(), Constants.TICKS_PER_SECOND * 30, 2));
+		break;
 		case quinine:
     		cureAllPotions(world, entityPlayer);
     		entityPlayer.addPotionEffect(new PotionEffect(Potion.regeneration.getId(), Constants.TICKS_PER_MINUTE * 1, 1));
     		break;
 		case shikimicAcid:
-			// No effect.
-			break; 
+	        // No effect.
+		break; 
 		case salt:
-		       // No effect.
-		      break;
+		// No effect.
+		break;
 		case sulfuricAcid:
-			entityPlayer.attackEntityFrom(DamageSource.generic, 5);	 
-			break;
+		entityPlayer.attackEntityFrom(DamageSource.generic, 5);	 
+		break;
 		case buli:
-			entityPlayer.attackEntityFrom(DamageSource.generic, 8);	 
-			break;
+		entityPlayer.attackEntityFrom(DamageSource.generic, 8);	 
+		break;
 		case phosgene:
 		entityPlayer.setFire(100);
 		break; 
@@ -273,9 +272,9 @@ public class MinechemHelper {
 		break;
 		// this will increase difficulty as only two polyketides has medical potential 
 		case pkthree:
-			break;
+		break;
 		case pkfour:
-			break;
+		break;
 		case dderm: 
 		entityPlayer.addPotionEffect(new PotionEffect(Potion.damageBoost.getId(), Constants.TICKS_PER_MINUTE * 5, 2));
     		entityPlayer.addPotionEffect(new PotionEffect(Potion.moveSpeed.getId(),   Constants.TICKS_PER_MINUTE * 5, 2));
@@ -290,11 +289,11 @@ public class MinechemHelper {
 		break; 
 		case nod: 
 	        entityPlayer.addPotionEffect(new PotionEffect(Potion.hunger.getId(), Constants.TICKS_PER_MINUTE * 8, 1));
-			break; 
+		break; 
                 case hist:
-		     cureAllPotions(world, entityPlayer); 
+		cureAllPotions(world, entityPlayer); 
 	        entityPlayer.addPotionEffect(new PotionEffect(Potion.confusion.getId(), Constants.TICKS_PER_SECOND * 20, 5));
-		   entityPlayer.getFoodStats().addStats(3, .1F);
+		entityPlayer.getFoodStats().addStats(3, .1F);
 		break; 
 		case pal2: // this sh*t is real nasty 
 		entityPlayer.addPotionEffect(new PotionEffect(Potion.moveSlowdown.getId(), Constants.TICKS_PER_SECOND * 60, 20));
@@ -305,11 +304,13 @@ public class MinechemHelper {
 		entityPlayer.addPotionEffect(new PotionEffect(Potion.moveSpeed.getId(),   Constants.TICKS_PER_MINUTE * 5, 1));
 		break; 
                 case ctx:
-                
+                entityPlayer.addPotionEffect(new PotionEffect(Potion.hunger.getId(), Constants.TICKS_PER_MINUTE * 2, 1));
+                entityPlayer.addPotionEffect(new PotionEffect(Potion.confusion.getId(), Constants.TICKS_PER_MINUTE * 4, 1));
+                entityPlayer.addPotionEffect(new PotionEffect(Potion.digSlowDown.getId(), Constants.TICKS_PER_MINUTE * 4, 1));
                 break; 
 	        default:
-			entityPlayer.attackEntityFrom(DamageSource.generic, 5);
-			break;
+		entityPlayer.attackEntityFrom(DamageSource.generic, 5);
+		break;
     	}
     }
     
