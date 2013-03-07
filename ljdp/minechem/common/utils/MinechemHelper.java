@@ -195,10 +195,10 @@ public class MinechemHelper {
 	    	entityPlayer.addPotionEffect(new PotionEffect(Potion.moveSpeed.getId(), Constants.TICKS_PER_SECOND * 5, 0));
 	    	entityPlayer.getFoodStats().addStats(1, .1F);
 	    	break;
-    	case psilocybin: // I ate a mushroom pie
+    	case psilocybin: 
     		entityPlayer.addPotionEffect(new PotionEffect(Potion.confusion.getId(), Constants.TICKS_PER_SECOND * 30, 5));
     		entityPlayer.attackEntityFrom(DamageSource.generic, 2);
-			entityPlayer.addPotionEffect(new PotionEffect(Potion.nightVision.getId(), Constants.TICKS_PER_SECOND * 30, 5));
+		entityPlayer.addPotionEffect(new PotionEffect(Potion.nightVision.getId(), Constants.TICKS_PER_SECOND * 30, 5));
     		break;
     	case amphetamine:
     		entityPlayer.addPotionEffect(new PotionEffect(Potion.moveSpeed.getId(), Constants.TICKS_PER_SECOND * 20, 7));
@@ -226,9 +226,9 @@ public class MinechemHelper {
     	case testosterone:
     		entityPlayer.addPotionEffect(new PotionEffect(Potion.damageBoost.getId(), Constants.TICKS_PER_MINUTE * 5, 2));
     		entityPlayer.addPotionEffect(new PotionEffect(Potion.moveSpeed.getId(),   Constants.TICKS_PER_MINUTE * 5, 0));
-    	        
+    	        entityPlayer.addPotionEffect(new PotionEffect(Potion.damageBoost.getId(), Constants.TICKS_PER_MINUTE * 5, 2));
     		break;
-	    case xanax:
+	       case xanax:
 	    	cureAllPotions(world, entityPlayer); 
 	    	entityPlayer.addPotionEffect(new PotionEffect(Potion.confusion.getId(), Constants.TICKS_PER_SECOND * 30, 5));
 	    	entityPlayer.addPotionEffect(new PotionEffect(Potion.moveSlowdown.getId(), Constants.TICKS_PER_SECOND * 30, 2));
@@ -303,7 +303,7 @@ public class MinechemHelper {
 		case theobromine: // Speed boost from coffie :D 
 		entityPlayer.addPotionEffect(new PotionEffect(Potion.moveSpeed.getId(),   Constants.TICKS_PER_MINUTE * 5, 1));
 		break; 
-                case ctx:
+                case ctx: 
                 entityPlayer.addPotionEffect(new PotionEffect(Potion.hunger.getId(), Constants.TICKS_PER_MINUTE * 2, 1));
                 entityPlayer.addPotionEffect(new PotionEffect(Potion.confusion.getId(), Constants.TICKS_PER_MINUTE * 4, 1));
                 entityPlayer.addPotionEffect(new PotionEffect(Potion.digSlowDown.getId(), Constants.TICKS_PER_MINUTE * 4, 1));
