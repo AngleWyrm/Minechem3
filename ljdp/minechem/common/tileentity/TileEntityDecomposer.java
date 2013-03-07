@@ -47,7 +47,7 @@ public class TileEntityDecomposer extends MinechemTileEntity implements ISidedIn
 IPowerReceptor, ITriggerProvider, IMinechemTriggerProvider, ISpecialInventory, IMinechemMachinePeripheral
 {
 	
-	private static final int MAX_POWER_STORAGE =1000;
+	private static final int POWER_STORAGE = 1000;
 	private static final float MIN_WORK_PER_SECOND = 1.0F;
 	private static final float MAX_WORK_PER_SECOND = 10.0F;
 	
@@ -87,7 +87,7 @@ IPowerReceptor, ITriggerProvider, IMinechemTriggerProvider, ISpecialInventory, I
 		inputTransactor	   = new Transactor(inputInventory);
 		inventory = new ItemStack[getSizeInventory()];
 		outputBuffer = new ArrayList<ItemStack>();
-		powerProvider = new MinechemPowerProvider(2, 20, 0, 10000);
+		powerProvider = new MinechemPowerProvider(2, 20, 0, POWER_STORAGE);
 		powerProvider.configurePowerPerdition(1, Constants.TICKS_PER_SECOND * 2);
 		model = new ModelDecomposer();
 		ActionManager.registerTriggerProvider(this);
