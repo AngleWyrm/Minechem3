@@ -84,7 +84,7 @@ public class ModMinechem {
 	public static int microscopeID;
 	public static int synthesisID;
 	public static Logger blLog = Logger.getLogger("MineChem");
-	public static CreativeTabs minechemTab = new CreativeTabMinechem("Minechem");
+	public static CreativeTabs minechemTab = new CreativeTabMinechem("MineChem");
 	private Configuration config;
 	private static final String[] LANGUAGES_SUPPORTED = new String[] { "en_GB", "zh_CN", "de_DE" };
 	@PreInit
