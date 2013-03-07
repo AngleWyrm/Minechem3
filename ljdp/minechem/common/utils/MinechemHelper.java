@@ -298,12 +298,15 @@ public class MinechemHelper {
 		break; 
 		case pal2: // this sh*t is real nasty 
 		entityPlayer.addPotionEffect(new PotionEffect(Potion.moveSlowdown.getId(), Constants.TICKS_PER_SECOND * 60, 20));
-	    entityPlayer.addPotionEffect(new PotionEffect(Potion.wither.getId(), Constants.TICKS_PER_SECOND * 60, 2));
+	        entityPlayer.addPotionEffect(new PotionEffect(Potion.wither.getId(), Constants.TICKS_PER_SECOND * 60, 2));
 		entityPlayer.addPotionEffect(new PotionEffect(Potion.confusion.getId(), Constants.TICKS_PER_SECOND * 60, 5));
 		break; 
 		case theobromine: // Speed boost from coffie :D 
 		entityPlayer.addPotionEffect(new PotionEffect(Potion.moveSpeed.getId(),   Constants.TICKS_PER_MINUTE * 5, 1));
 		break; 
+                case ctx:
+                
+                break; 
 	        default:
 			entityPlayer.attackEntityFrom(DamageSource.generic, 5);
 			break;
