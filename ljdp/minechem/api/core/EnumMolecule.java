@@ -110,7 +110,7 @@ public enum EnumMolecule {
         pktwo                           (85, "Minecraftolide B", new Element(C,14), new Element (H,25), new Element(O,2), new Element(N,2)),
         pkthree                         (86, "Minecraftolide A1", new Element(C,13), new Element(H,23), new Element(O,2), new Element(N,1), new Element(Cl,1)),
         pkfour                          (87, "Minecraftolide B1", new Element(C,21), new Element(H,30), new Element(O,7), new Element(N,2), new Element(P,1)),
-dderm                   (88, "(+)-Discodermolide", new Element(C,33), new Element(H,55), new Element(N,1), new Element(O,8)),
+        dderm                   (88, "(+)-Discodermolide", new Element(C,33), new Element(H,55), new Element(N,1), new Element(O,8)),
         salt                                    (89, "Sodium Chloride", new Element(Na,1), new Element(Cl,1)),
         nhthree                                 (90, "Aqueous Ammonia", new Element(N,1), new Element(H,4), new Molecule(hydroxide)),
         nod                                     (91, "Nodularin", new Element(C,41), new Element(H,60), new Element(N,8), new Element(O,10)),
@@ -123,7 +123,7 @@ dderm                   (88, "(+)-Discodermolide", new Element(C,33), new Elemen
         phosgene                (98, "Phosgene", new Element(C,1), new Element(O,1), new Element(Cl,2)),
         aalc                    (99, "Allyl alcohol", new Element(C,3), new Element(H,6), new Element(O,1)),
         hist                    (100, "Diphenhydramine", new Element(C,17), new Element(H,21), new Element(N), new Element(O)),
-        pal2 (101, "Batrachotoxin (Palytoxin analogue)", new Element(C,31), new Element(H,42), new Element(N,2), new Element(O,6))
+        pal2 (101, "Batrachotoxin", new Element(C,31), new Element(H,42), new Element(N,2), new Element(O,6))
        ;
        
         public static EnumMolecule[] molecules = values();
