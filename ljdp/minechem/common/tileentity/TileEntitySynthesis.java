@@ -81,7 +81,7 @@ IPowerReceptor, ITriggerProvider, IMinechemTriggerProvider, ISpecialInventory, I
 	int minEnergyPerTick = 30;
 	int maxEnergyPerTick = 200;
 	int activationEnergy = 100;
-	int energyStorage = 90000;
+	int energyStorage = 9000;
 	
 	private boolean hasFullEnergy;
 	
