@@ -47,7 +47,7 @@ public class TileEntityDecomposer extends MinechemTileEntity implements ISidedIn
 IPowerReceptor, ITriggerProvider, IMinechemTriggerProvider, ISpecialInventory, IMinechemMachinePeripheral
 {
 	
-	private static final int MAX_POWER_STORAGE = 100;
+	private static final int MAX_POWER_STORAGE =1000;
 	private static final float MIN_WORK_PER_SECOND = 1.0F;
 	private static final float MAX_WORK_PER_SECOND = 10.0F;
 	
