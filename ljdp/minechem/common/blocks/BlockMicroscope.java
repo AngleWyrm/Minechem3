@@ -19,7 +19,7 @@ public class BlockMicroscope extends BlockMinechemContainer {
 		super(par1, Material.iron);
 		setCreativeTab(ModMinechem.minechemTab);
 		setBlockName("minechem.blockMicroscope");
-		setLightValue(0.3F);
+		setLightValue(0.5F);
 	}
 	
 	@Override
