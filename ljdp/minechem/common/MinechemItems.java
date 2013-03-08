@@ -19,6 +19,7 @@ import ljdp.minechem.common.items.ItemLens;
 import ljdp.minechem.common.items.ItemMolecule;
 import ljdp.minechem.common.items.ItemTestTube;
 import ljdp.minechem.common.utils.MinechemHelper;
+import ljdp.minechem.common.PhotonicInduction;
 
 public class MinechemItems {
 	public static ItemElement element;
@@ -38,6 +39,7 @@ public class MinechemItems {
 	public static ItemStack concaveLens;
 	public static ItemStack projectorLens;
 	public static ItemStack microscopeLens;
+	public static ItemStack PhotonicInduction;
 	
 	private static int elementID;
 	private static int moleculeID;
@@ -52,13 +54,15 @@ public class MinechemItems {
 	private static int hazmatLegsID;
 	private static int hazmatTorsoID;
 	private static int hazmatHeadID;
+	public static int PhotonicInductionID;
+
 	
 	public static void loadConfig(Configuration config) {
 		int baseID  = 4736;
 		elementID   = getItemConfig(config, "Element", baseID++);
 	 	moleculeID  = getItemConfig(config, "Molecule", baseID++);
 	 	lensID	 	= getItemConfig(config, "Lens", baseID++);
-	 	atomicManipulatorID =getItemConfig(config, "AtomicManipulator", baseID++);
+	 	atomicManipulatorID = getItemConfig(config, "AtomicManipulator", baseID++);
 	 	fusionStarID = getItemConfig(config, "FusionStar", baseID++);
 	 	blueprintID  = getItemConfig(config, "Blueprint", baseID++);
 	 	testTubeID   = getItemConfig(config, "TestTube", baseID++);
@@ -67,6 +71,7 @@ public class MinechemItems {
 	 	hazmatLegsID = getItemConfig(config, "HazmatLegs", baseID++);
 	 	hazmatTorsoID = getItemConfig(config, "HazmatTorso", baseID++);
 	 	hazmatHeadID = getItemConfig(config, "HazmatHead", baseID++);
+	 	photonID = getItemConfig(config, "Hammer", baseID++);
 	}
 	
 	private static int getItemConfig(Configuration config, String key, int defaultID) {
@@ -90,7 +95,8 @@ public class MinechemItems {
 		hazmatLegs.setIconCoord(0, 6);
 		hazmatTorso.setIconCoord(0, 5);
 		hazmatHead.setIconCoord(0, 4);
-		
+		HammerTime = new ItemStack(ingot.iron);
+		IAintAvinit = new PhotonicInduction(photonID, 10, IRON, 5, HammerTime) // Need to set the fucking params! I AINT AVIN IT! 
 		LanguageRegistry.addName(atomicManipulator, MinechemHelper.getLocalString("item.name.atomicmanipulator"));
 		LanguageRegistry.addName(fusionStar, MinechemHelper.getLocalString("item.name.fusionStar"));
 		LanguageRegistry.addName(testTube, MinechemHelper.getLocalString("item.name.testtube"));
@@ -99,6 +105,7 @@ public class MinechemItems {
 		LanguageRegistry.addName(hazmatLegs, MinechemHelper.getLocalString("item.name.hazmatLegs"));
 		LanguageRegistry.addName(hazmatTorso, MinechemHelper.getLocalString("item.name.hazmatTorso"));
 		LanguageRegistry.addName(hazmatHead, MinechemHelper.getLocalString("item.name.hazmatHead"));
+		LanguageRegistry.addName(IAintAvinit, "PhotonicInduction's Hammer"); 
 		
 		concaveLens = new ItemStack(lens, 1, 0);
 		convexLens  = new ItemStack(lens, 1, 1);
