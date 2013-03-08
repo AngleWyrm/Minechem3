@@ -20,7 +20,7 @@ import ljdp.minechem.common.items.ItemMolecule;
 import ljdp.minechem.common.items.ItemTestTube;
 import ljdp.minechem.common.items.PhotonicInduction;
 import ljdp.minechem.common.utils.MinechemHelper;
-import net.minecraft.EnumToolMaterial.*;
+import net.minecraft.item.EnumToolMaterial;
 
 public class MinechemItems {
 	public static ItemElement element;
@@ -40,7 +40,7 @@ public class MinechemItems {
 	public static ItemStack concaveLens;
 	public static ItemStack projectorLens;
 	public static ItemStack microscopeLens;
-	public static ItemStack IAintAvinit;
+	public static PhotonicInduction IAintAvinit;
 	public static ItemStack HammerTime; 
 	
 	private static int elementID;

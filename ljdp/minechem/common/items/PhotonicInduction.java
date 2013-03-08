@@ -1,7 +1,7 @@
    // I learned this method from IC2. All credits to the IC2 Team!
    // public static final EnumToolMaterial IRON
    package ljdp.minechem.common.items;
-   import net.minecraft.EnumToolMaterial;
+   import net.minecraft.item.EnumToolMaterial;
    import net.minecraft.item.ItemPickaxe;
    import net.minecraft.item.ItemStack;
    import net.minecraft.item.Item;
@@ -16,7 +16,7 @@
      super(id, enumtoolmaterial);
      this.efficiencyOnProperMaterial = efficiency;
      setIconIndex(index);
-     this.repairMaterial = repairID;
+     this.repairID = repairID;
      }
    
      public String getTextureFile()
