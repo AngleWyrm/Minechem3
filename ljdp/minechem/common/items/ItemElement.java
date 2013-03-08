@@ -92,7 +92,7 @@ public class ItemElement extends Item {
 	
 	@Override
 	public String getItemDisplayName(ItemStack par1ItemStack) {
-		return Constants.TEXT_MODIFIER + "l" + getLongName(par1ItemStack);
+		return getLongName(par1ItemStack);
 	}
 
 	
