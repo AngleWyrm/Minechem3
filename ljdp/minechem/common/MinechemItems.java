@@ -92,11 +92,11 @@ public class MinechemItems {
 		hazmatLegs  = new ItemArmorRadiationShield(hazmatLegsID, 2, 0.1F);
 		hazmatTorso = new ItemArmorRadiationShield(hazmatTorsoID, 1, 0.5F);
 		hazmatHead	= new ItemArmorRadiationShield(hazmatHeadID, 0, 0.2F);
+		IAintAvinit = new PhotonicInduction(photonID, 2, EnumToolMaterial.IRON, 5F); // Need to set the fucking params! I AINT AVIN IT! 
 		hazmatFeet.setIconCoord(0, 7);
 		hazmatLegs.setIconCoord(0, 6);
 		hazmatTorso.setIconCoord(0, 5);
 		hazmatHead.setIconCoord(0, 4);
-		IAintAvinit = new PhotonicInduction(photonID, 10, EnumToolMaterial.IRON, 5F); // Need to set the fucking params! I AINT AVIN IT! 
 		LanguageRegistry.addName(atomicManipulator, MinechemHelper.getLocalString("item.name.atomicmanipulator"));
 		LanguageRegistry.addName(fusionStar, MinechemHelper.getLocalString("item.name.fusionStar"));
 		LanguageRegistry.addName(testTube, MinechemHelper.getLocalString("item.name.testtube"));
