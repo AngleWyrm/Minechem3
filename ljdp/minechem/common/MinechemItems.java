@@ -41,7 +41,6 @@ public class MinechemItems {
 	public static ItemStack projectorLens;
 	public static ItemStack microscopeLens;
 	public static PhotonicInduction IAintAvinit;
-	public static ItemStack HammerTime; 
 	
 	private static int elementID;
 	private static int moleculeID;
@@ -57,7 +56,6 @@ public class MinechemItems {
 	private static int hazmatTorsoID;
 	private static int hazmatHeadID;
     private static int photonID;
-	public static EnumToolMaterial ironSet;
 
 	
 	public static void loadConfig(Configuration config) {
@@ -74,7 +72,7 @@ public class MinechemItems {
 	 	hazmatLegsID = getItemConfig(config, "HazmatLegs", baseID++);
 	 	hazmatTorsoID = getItemConfig(config, "HazmatTorso", baseID++);
 	 	hazmatHeadID = getItemConfig(config, "HazmatHead", baseID++);
-	 	photonID = getItemConfig(config, "Hammer", baseID++);
+	 	photonID =  getItemConfig(config, "Hammer", baseID++);
 	}
 	
 	private static int getItemConfig(Configuration config, String key, int defaultID) {
@@ -98,8 +96,7 @@ public class MinechemItems {
 		hazmatLegs.setIconCoord(0, 6);
 		hazmatTorso.setIconCoord(0, 5);
 		hazmatHead.setIconCoord(0, 4);
-		ironSet = EnumToolMaterial.IRON;
-		IAintAvinit = new PhotonicInduction(photonID, 10, ironSet, 5F); // Need to set the fucking params! I AINT AVIN IT! 
+		IAintAvinit = new PhotonicInduction(photonID, 10, EnumToolMaterial.IRON, 5F); // Need to set the fucking params! I AINT AVIN IT! 
 		LanguageRegistry.addName(atomicManipulator, MinechemHelper.getLocalString("item.name.atomicmanipulator"));
 		LanguageRegistry.addName(fusionStar, MinechemHelper.getLocalString("item.name.fusionStar"));
 		LanguageRegistry.addName(testTube, MinechemHelper.getLocalString("item.name.testtube"));
