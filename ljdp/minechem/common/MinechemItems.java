@@ -96,7 +96,7 @@ public class MinechemItems {
 		hazmatTorso.setIconCoord(0, 5);
 		hazmatHead.setIconCoord(0, 4);
 		HammerTime = new ItemStack(ingot.iron);
-		IAintAvinit = new PhotonicInduction(photonID, 10, IRON, 5, HammerTime) // Need to set the fucking params! I AINT AVIN IT! 
+		IAintAvinit = new PhotonicInduction(photonID, 10, IRON, 5, HammerTime); // Need to set the fucking params! I AINT AVIN IT! 
 		LanguageRegistry.addName(atomicManipulator, MinechemHelper.getLocalString("item.name.atomicmanipulator"));
 		LanguageRegistry.addName(fusionStar, MinechemHelper.getLocalString("item.name.fusionStar"));
 		LanguageRegistry.addName(testTube, MinechemHelper.getLocalString("item.name.testtube"));
