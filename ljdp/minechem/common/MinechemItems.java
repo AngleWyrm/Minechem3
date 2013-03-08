@@ -19,7 +19,7 @@ import ljdp.minechem.common.items.ItemLens;
 import ljdp.minechem.common.items.ItemMolecule;
 import ljdp.minechem.common.items.ItemTestTube;
 import ljdp.minechem.common.utils.MinechemHelper;
-import ljdp.minechem.common.PhotonInduction;
+import ljdp.minechem.common.PhotonicInduction;
 
 public class MinechemItems {
 	public static ItemElement element;
@@ -55,7 +55,7 @@ public class MinechemItems {
 	private static int hazmatLegsID;
 	private static int hazmatTorsoID;
 	private static int hazmatHeadID;
-	public static int PhotonicInductionID;
+	public static int PhotonID;
 
 	
 	public static void loadConfig(Configuration config) {
