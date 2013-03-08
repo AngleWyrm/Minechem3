@@ -19,7 +19,7 @@ import ljdp.minechem.common.items.ItemLens;
 import ljdp.minechem.common.items.ItemMolecule;
 import ljdp.minechem.common.items.ItemTestTube;
 import ljdp.minechem.common.utils.MinechemHelper;
-import ljdp.minechem.common.PhotonID;
+import ljdp.minechem.common.PhotonInduction;
 
 public class MinechemItems {
 	public static ItemElement element;
@@ -39,7 +39,7 @@ public class MinechemItems {
 	public static ItemStack concaveLens;
 	public static ItemStack projectorLens;
 	public static ItemStack microscopeLens;
-	public static ItemStack PhotonicInduction;
+	public static ItemStack IAintAvinit;
 	public static ItemStack HammerTime; 
 	
 	private static int elementID;
