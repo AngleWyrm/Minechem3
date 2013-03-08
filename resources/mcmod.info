@@ -4,7 +4,7 @@
   "name": "MineChem",
   "description": "Add chemistry to Minecraft.",
   "version": "",
-  "credits": "Minechem Dev Team",
+  "credits": "Created by Ljdp (Luke Perkin)",
   "logoFile": "/textures/minechem/logo.png",
   "mcversion": "",
   "url": "https://github.com/perky/Minechem",
@@ -12,5 +12,8 @@
   "authors": [ "Ljdp", "Ian", "Rushmead", "Adelayde", "Mandrake" ],
   "parent":"",
   "screenshots": [],
+  "dependencies": [
+     "mod_MinecraftForge"
+  ]
 }
 ]
