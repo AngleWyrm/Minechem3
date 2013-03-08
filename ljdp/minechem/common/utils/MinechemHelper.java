@@ -306,7 +306,7 @@ public class MinechemHelper {
                 case ctx: 
                 entityPlayer.addPotionEffect(new PotionEffect(Potion.hunger.getId(), Constants.TICKS_PER_MINUTE * 2, 1));
                 entityPlayer.addPotionEffect(new PotionEffect(Potion.confusion.getId(), Constants.TICKS_PER_MINUTE * 4, 1));
-                entityPlayer.addPotionEffect(new PotionEffect(Potion.digSlowDown.getId(), Constants.TICKS_PER_MINUTE * 4, 1));
+                entityPlayer.addPotionEffect(new PotionEffect(Potion.moveSlowdown.getId(), Constants.TICKS_PER_MINUTE * 4, 0));
                 break; 
 	        default:
 		entityPlayer.attackEntityFrom(DamageSource.generic, 5);
