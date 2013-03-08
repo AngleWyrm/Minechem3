@@ -1,40 +1,65 @@
-# Minechem v2.0.0pr6.1
-Adds chemistry to minecraft. Minechem comes with five machines.
-* The Decomposer takes an item and decomposes it into it's chemical composition.
-* The Synthesis machines takes elements and molecules and synthesis them into tangible items.
-* The Microscope can inspect items to discover chemical compositions and recipes for the synthesis machine.
-* The Blueprint projector takes a blueprint and projects a 3D representation of a structure. Used for building advanced machines.
-* The Fusion chamber is built via the blueprint projector and combines the mass of two elements to create a single heavier element.
-* The Hazmat suit reduces damage from radioactive elements.
-* The Chemical storage will store chemicals and prevent them from decaying.
-* The Chemistry Turtle will assist you with your chemical production line. (See wiki for more details on chemistry turtle). 
+21.
+ 
 
-## Requirements:
-* Minecraft 1.4.6
-* Forge 6.5.0.451+
-* BuildCraft 3.3+
-
-## Download links
-
-MineChem 2.0.0pr6.1:
-http://bit.ly/RE2eTy
-
+22.
 ## Licence
-Minechem v2.x is licensed under Creative Commons Attribution-ShareAlike 3.0 Unported.
+
+23.
+Minechem v2 is licensed under Creative Commons Attribution-ShareAlike 3.0 Unported.
+
+24.
 You are free:
+
+25.
 * _to share_ - to copy, distribute and transmit the work
+
+26.
 * _to remix_ - to adapt the work
+
+27.
 * _to profit_ - to make commercial use of the work.
 
+28.
+ 
+
+29.
 Under the following conditions:
+
+30.
 * _attribution_ - you must attribute my name, ljdp. (Forking the repo in github counts).
+
+31.
 * _share alike_ - you must license any modification under the same or similar as this one.
 
+32.
+ 
+
+33.
 For more information on this license see here: http://creativecommons.org/licenses/by-sa/3.0/
 
-## Credits
-Ljdp, Ian, Rushmead, Adelayde, Phrost, Mandrake
+34.
+ 
 
-## Donate
-Help MineChem out a little:
-http://minechem.chipin.com
+35.
+## Credits
+
+36.
+Ljdp - Project Leader
+
+37.
+Ian - Artwork
+
+38.
+Rushmead - Code
+
+39.
+Adelayde - Code
+
+40.
+Phrost - Code
+
+41.
+Mandrake - Code, Cleaning up, Bugfixes and adding new chemistry 
+
+42.
+Vitzli - Code, New chemistry
