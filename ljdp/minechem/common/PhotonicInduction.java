@@ -1,6 +1,6 @@
    // I learned this method from IC2. All credits to the IC2 Team!
    // public static final EnumToolMaterial IRON
-   package ljdp.minechem.common
+   package ljdp.minechem.common;
    import net.minecraft.item.EnumToolMaterial;
    import net.minecraft.item.ItemPickaxe;
    import net.minecraft.item.ItemStack;
