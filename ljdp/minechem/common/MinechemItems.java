@@ -18,9 +18,9 @@ import ljdp.minechem.common.items.ItemFusionStar;
 import ljdp.minechem.common.items.ItemLens;
 import ljdp.minechem.common.items.ItemMolecule;
 import ljdp.minechem.common.items.ItemTestTube;
+import ljdp.minechem.common.items.PhotonicInduction;
 import ljdp.minechem.common.utils.MinechemHelper;
-import ljdp.minechem.common.PhotonicInduction;
-import net.minecraft.src.EnumToolMaterial;
+import net.minecraft.EnumToolMaterial.*;
 
 public class MinechemItems {
 	public static ItemElement element;
@@ -56,7 +56,8 @@ public class MinechemItems {
 	private static int hazmatLegsID;
 	private static int hazmatTorsoID;
 	private static int hazmatHeadID;
-        private static int photonID;
+    private static int photonID;
+	public static EnumToolMaterial ironSet;
 
 	
 	public static void loadConfig(Configuration config) {
@@ -97,8 +98,8 @@ public class MinechemItems {
 		hazmatLegs.setIconCoord(0, 6);
 		hazmatTorso.setIconCoord(0, 5);
 		hazmatHead.setIconCoord(0, 4);
-		HammerTime = new ItemStack(Item.ingotIron);
-		IAintAvinit = new ItemStack(PhotonicInduction(photonID, 10, EnumToolMaterial.IRON, 5, HammerTime)); // Need to set the fucking params! I AINT AVIN IT! 
+		ironSet = EnumToolMaterial.IRON;
+		IAintAvinit = new PhotonicInduction(photonID, 10, ironSet, 5F); // Need to set the fucking params! I AINT AVIN IT! 
 		LanguageRegistry.addName(atomicManipulator, MinechemHelper.getLocalString("item.name.atomicmanipulator"));
 		LanguageRegistry.addName(fusionStar, MinechemHelper.getLocalString("item.name.fusionStar"));
 		LanguageRegistry.addName(testTube, MinechemHelper.getLocalString("item.name.testtube"));

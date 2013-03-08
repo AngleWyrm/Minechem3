@@ -1,22 +1,22 @@
    // I learned this method from IC2. All credits to the IC2 Team!
    // public static final EnumToolMaterial IRON
-   package ljdp.minechem.common;
+   package ljdp.minechem.common.items;
    import net.minecraft.item.EnumToolMaterial;
    import net.minecraft.item.ItemPickaxe;
    import net.minecraft.item.ItemStack;
+   import net.minecraft.item.Item;
    import ljdp.minechem.common.ModMinechem;
    
    public class PhotonicInduction extends ItemPickaxe
    {
-     private final ItemStack repairMaterial;
      public float efficiencyOnProperMaterial;
-   
-     public PhotonicInduction (int id, int index, EnumToolMaterial enumtoolmaterial, float efficiency, ItemStack repairMaterial)
+	 public ItemStack repairID = new ItemStack(Item.ingotIron);
+     public PhotonicInduction (int id, int index, EnumToolMaterial enumtoolmaterial, float efficiency)
      {
      super(id, enumtoolmaterial);
      this.efficiencyOnProperMaterial = efficiency;
      setIconIndex(index);
-     this.repairMaterial = repairMaterial;
+     this.repairMaterial = repairID;
      }
    
      public String getTextureFile()
@@ -31,6 +31,6 @@
    
      public boolean getIsRepairable(ItemStack stack1, ItemStack stack2)
      {
-     return (stack2 != null) && (stack2.itemID == this.repairMaterial.itemID);
+     return (stack2 != null) && (stack2.itemID == this.repairID.itemID);
      }
    }
