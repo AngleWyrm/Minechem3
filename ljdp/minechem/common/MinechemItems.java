@@ -19,7 +19,7 @@ import ljdp.minechem.common.items.ItemLens;
 import ljdp.minechem.common.items.ItemMolecule;
 import ljdp.minechem.common.items.ItemTestTube;
 import ljdp.minechem.common.utils.MinechemHelper;
-import ljdp.minechem.common.PhotonicInduction;
+import ljdp.minechem.common.PhotonID;
 
 public class MinechemItems {
 	public static ItemElement element;
@@ -40,6 +40,7 @@ public class MinechemItems {
 	public static ItemStack projectorLens;
 	public static ItemStack microscopeLens;
 	public static ItemStack PhotonicInduction;
+	public static ItemStack HammerTime; 
 	
 	private static int elementID;
 	private static int moleculeID;
@@ -95,7 +96,7 @@ public class MinechemItems {
 		hazmatLegs.setIconCoord(0, 6);
 		hazmatTorso.setIconCoord(0, 5);
 		hazmatHead.setIconCoord(0, 4);
-		HammerTime = new ItemStack(ingot.iron);
+		HammerTime = new ItemStack(Ingot.iron);
 		IAintAvinit = new PhotonicInduction(photonID, 10, IRON, 5, HammerTime); // Need to set the fucking params! I AINT AVIN IT! 
 		LanguageRegistry.addName(atomicManipulator, MinechemHelper.getLocalString("item.name.atomicmanipulator"));
 		LanguageRegistry.addName(fusionStar, MinechemHelper.getLocalString("item.name.fusionStar"));
