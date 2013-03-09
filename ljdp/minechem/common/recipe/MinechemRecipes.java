@@ -193,7 +193,14 @@ public class MinechemRecipes {
 				'L', new ItemStack(MinechemItems.element, 1, Pb.ordinal()),
 				'C', new ItemStack(Block.chest)
 		);
-
+      
+	  	GameRegistry.addRecipe(new ItemStack(MinechemItems.IAintAvinit),
+				"ZZZ",
+				"ZSZ",
+				" S ",
+				'Z', new ItemStack(Item.ingotIron),
+				'S', new ItemStack(Item.stick)
+		);
 		GameRegistry.addShapelessRecipe(new ItemStack(MinechemItems.journal), 
 				new ItemStack(Item.book), new ItemStack(MinechemItems.testTube));
 		
