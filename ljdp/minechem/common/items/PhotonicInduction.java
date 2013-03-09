@@ -21,7 +21,7 @@
    
      public String getTextureFile()
      {
-     return ModMinechem.proxy.ITEMS_PNG;
+     return ModMinechem.proxy.ICONS_PNG;
      }
    
      public int getItemEnrchantability()

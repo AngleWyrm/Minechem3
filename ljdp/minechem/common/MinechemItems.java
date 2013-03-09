@@ -92,7 +92,7 @@ public class MinechemItems {
 		hazmatLegs  = new ItemArmorRadiationShield(hazmatLegsID, 2, 0.1F);
 		hazmatTorso = new ItemArmorRadiationShield(hazmatTorsoID, 1, 0.5F);
 		hazmatHead	= new ItemArmorRadiationShield(hazmatHeadID, 0, 0.2F);
-		IAintAvinit = new PhotonicInduction(photonID, 51, EnumToolMaterial.IRON, 5F); // Need to set the fucking params! I AINT AVIN IT! 
+		IAintAvinit = new PhotonicInduction(photonID, 12, EnumToolMaterial.IRON, 5F); // Need to set the fucking params! I AINT AVIN IT! 
 		hazmatFeet.setIconCoord(0, 7);
 		hazmatLegs.setIconCoord(0, 6);
 		hazmatTorso.setIconCoord(0, 5);
