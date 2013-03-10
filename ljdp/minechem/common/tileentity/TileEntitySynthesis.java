@@ -37,7 +37,8 @@ import buildcraft.api.power.IPowerProvider;
 import buildcraft.api.power.IPowerReceptor;
 import buildcraft.api.transport.IPipe;
 
-public class TileEntitySynthesis extends MinechemTileEntity implements ISidedInventory, IPowerReceptor, ITriggerProvider, IMinechemTriggerProvider, ISpecialInventory, IMinechemMachinePeripheral
+public class TileEntitySynthesis extends MinechemTileEntity implements ISidedInventory, 
+IPowerReceptor, ITriggerProvider, IMinechemTriggerProvider, ISpecialInventory, IMinechemMachinePeripheral
 {
 	
 	private class ItemStackPointer {
@@ -99,7 +100,7 @@ public class TileEntitySynthesis extends MinechemTileEntity implements ISidedInv
 
     @Override
 	public int addItem(ItemStack stack, boolean doAdd, ForgeDirection direction) {
-	return 0;
+        return new Transactor(storageInventory).add(stack, doAdd).stackSize;
 	}
 	
 	public boolean canTakeOutputStack() {
