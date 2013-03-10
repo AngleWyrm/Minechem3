@@ -9,7 +9,7 @@
    public class PhotonicInduction extends ItemPickaxe
     {
      public float efficiencyOnProperMaterial;
-     1public ItemStack repairID = new ItemStack(Item.ingotIron);
+     public ItemStack repairID = new ItemStack(Item.ingotIron);
      public PhotonicInduction (int id, int index, EnumToolMaterial enumtoolmaterial, float efficiency)
      {
      super(id, enumtoolmaterial);
