@@ -101,8 +101,7 @@ public class ModMinechem {
 	@ServerStarting
     public void serverStarting(FMLServerStartingEvent event)
     {
-		CommandHandler commandManager = (CommandHandler) event.getServer().getCommandManager();
-		commandManager.registerCommand(new CommandPrintOreDict());
+    //overwrite
     }
 	
 	private void checkForBuildcraft() throws IOException {
