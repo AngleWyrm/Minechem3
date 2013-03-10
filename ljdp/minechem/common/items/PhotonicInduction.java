@@ -9,12 +9,12 @@
    public class PhotonicInduction extends ItemPickaxe
     {
      public float efficiencyOnProperMaterial;
-	 public ItemStack repairID = new ItemStack(Item.ingotIron);
+     1public ItemStack repairID = new ItemStack(Item.ingotIron);
      public PhotonicInduction (int id, int index, EnumToolMaterial enumtoolmaterial, float efficiency)
      {
      super(id, enumtoolmaterial);
-	 setItemName("minechem.hammer");
-	 setCreativeTab(ModMinechem.minechemTab);
+     setItemName("minechem.hammer");
+     setCreativeTab(ModMinechem.minechemTab);
      this.efficiencyOnProperMaterial = efficiency;
      setIconIndex(index);
      }
@@ -26,9 +26,9 @@
    
      public int getItemEnrchantability()
      {
-     return 0;
+     return 4;
      }
-   
+
      public boolean getIsRepairable(ItemStack stack1, ItemStack stack2)
      {
      return (stack2 != null) && (stack2.itemID == this.repairID.itemID);
