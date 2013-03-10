@@ -842,6 +842,7 @@ public class MinechemRecipes {
 		registerPoisonRecipes(pal2);
 		registerPoisonRecipes(nod);
 		registerPoisonRecipes(afroman);
+		registerPoisonRecipes(ctx);
 	}
 	
 	private void addDecomposerRecipesFromMolecules() {
