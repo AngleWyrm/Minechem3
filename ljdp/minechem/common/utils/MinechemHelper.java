@@ -106,7 +106,7 @@ public class MinechemHelper {
 	}
 	
 	public static ArrayList<ItemStack> convertChemicalsIntoItemStacks(ArrayList<Chemical> chemicals) {
-		ArrayList<ItemStack> stacks = new ArrayList();
+		ArrayList<ItemStack> stacks = new ArrayList<ItemStack>();
 		if(chemicals == null)
 			return stacks;
 		for(Chemical chemical : chemicals) {
