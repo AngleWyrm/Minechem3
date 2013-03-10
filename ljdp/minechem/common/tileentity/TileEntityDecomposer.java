@@ -248,8 +248,19 @@ IPowerReceptor, ITriggerProvider, IMinechemTriggerProvider, ISpecialInventory, I
 
 	@Override
 	public int addItem(ItemStack incoming, boolean doAdd, ForgeDirection from) {
-	return 0; 
+		
+		if (incoming != null){
+			 if (incoming.itemID == MinechemItems.testTube.itemID) {
+		        	return testTubeTransactor.add(incoming, doAdd).stackSize;
+		        } else {
+		        	ItemStack tmp = inputTransactor.add(incoming, doAdd); return (tmp == null) ? 0 : tmp.stackSize;
+		        }	
+			
+		}else{
+       
 	}
+		return kEmptyBottleSlotsSize;
+		}
 
 	@Override
 	public ItemStack[] extractItem(boolean doRemove, ForgeDirection from, int maxItemCount) {
