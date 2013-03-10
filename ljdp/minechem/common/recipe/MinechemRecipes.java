@@ -315,7 +315,7 @@ public class MinechemRecipes {
 				element(N), molecule(water,5), element(N)
 		));
 		
-		ItemStack arrow = new ItemStack(Item.arrow);
+
 		
 		ItemStack paper = new ItemStack(Item.paper);
 		ItemStack leather = new ItemStack(Item.leather);
@@ -324,8 +324,6 @@ public class MinechemRecipes {
 		ItemStack clay = new ItemStack(Item.clay);
 		ItemStack mycelium = new ItemStack(Block.mycelium);
 		ItemStack anySapling = new ItemStack(Block.sapling, 1, -1);
-		
-		DecomposerRecipe.add(new DecomposerRecipe(arrow, element(Si), element(O,2), element(N,6)));
 		DecomposerRecipe.add(new DecomposerRecipeChance(clay, .3F, molecule(kaolinite)));
 		DecomposerRecipe.add(new DecomposerRecipeChance(brick, .5F, molecule(kaolinite)));
 		DecomposerRecipe.add(new DecomposerRecipe(snow, molecule(water)));
