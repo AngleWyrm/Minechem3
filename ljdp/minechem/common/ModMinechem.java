@@ -59,27 +59,30 @@ public class ModMinechem {
 	private static final String[] LANGUAGES_SUPPORTED = new String[] { "en_GB", "zh_CN", "de_DE" };
 	@PreInit
 	public void preInit(FMLPreInitializationEvent event) {
+	
 		blLog.setParent(FMLLog.getLogger());
-		blLog.info("Loading localization");
+		
 		Localization.loadLanguages(CommonProxy.LANG_DIR, LANGUAGES_SUPPORTED);
 		
-		blLog.info("Loading Config");
+		
 	 	loadConfig(event);
-	 	blLog.info("Adding Items");
+	 	
 		MinechemItems.registerItems();
-		blLog.info("Adding Blocks");
+		
 		MinechemBlocks.registerBlocks();
-		blLog.info("Adding Recipes");
+		
 		MinechemRecipes.getInstance().RegisterRecipes();
-		blLog.info("Registering Ore Dictionary items");
+		
 		MinechemItems.registerToOreDictionary();
-		blLog.info("Registering Forge Events");
+		
 		proxy.registerHooks();
-		blLog.info("Adding Ore Dictionary Recipes");
+		
 		MinecraftForge.EVENT_BUS.register(MinechemRecipes.getInstance());
-		blLog.info("Registering Blueprints");
+		
 		MinechemBlueprint.registerBlueprints();
-		blLog.info("Registering Villager Trades");
+		
+		blLog.info("PreInit PASSED");
+		
 		for(int i = 0; i < 5; i++)
 			VillagerRegistry.instance().registerVillageTradeHandler(i, new VillageTradeHandler());
 	}
@@ -89,6 +92,7 @@ public class ModMinechem {
 		NetworkRegistry.instance().registerGuiHandler(this, new GuiHandler());
 		TickRegistry.registerScheduledTickHandler(new ScheduledTickHandler(), Side.SERVER);
 		proxy.registerRenderers();
+			blLog.info("Init PASSED");
 	}
 	
 	@PostInit
@@ -96,6 +100,7 @@ public class ModMinechem {
 		checkForBuildcraft();
 		MinechemTriggers.registerTriggers();
 		initComputerCraftAddon(event);
+		blLog.info("PostInit PASSED");
 	}
 	
 	@ServerStarting
