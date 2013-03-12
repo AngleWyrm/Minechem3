@@ -464,7 +464,7 @@ public class MinechemRecipes {
 		DecomposerRecipe.add(new DecomposerRecipe(cocoaBean, molecule(theobromine)));
 		DecomposerRecipe.add(new DecomposerRecipe(pumpkin, molecule(cucurbitacin)));
 		DecomposerRecipe.add(new DecomposerRecipe(watermelon, molecule(cucurbitacin), molecule(asparticAcid), molecule(water,16)));
-		DecomposerRecipe.add(new DecomposerRecipe(glisteningMelon, molecule(water,4), element(Ti)));
+		DecomposerRecipe.add(new DecomposerRecipe(glisteningMelon, molecule(water,4), molecule(whitePigment), element(Au,1)));
 		DecomposerRecipe.add(new DecomposerRecipe(melon, molecule(water)));
 		DecomposerRecipe.add(new DecomposerRecipeChance(carrot, .05F, molecule(ret)));
 		DecomposerRecipe.add(new DecomposerRecipeChance(goldenCarrot, .2F, molecule(ret), element(Au,4)));
@@ -875,7 +875,6 @@ public class MinechemRecipes {
 		stackTag.setBoolean("minechem.isPoisoned", true);
 		stackTag.setInteger("minechem.effectType", aMolecule.id());
 		poisonedStack.setTagCompound(stackTag);
-		
 		GameRegistry.addShapelessRecipe(poisonedStack, poison, normalStack);
 		return poisonedStack;
 	}

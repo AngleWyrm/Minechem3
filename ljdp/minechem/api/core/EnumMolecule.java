@@ -21,13 +21,7 @@ public enum EnumMolecule {
         nitrogenDioxide                 (3, "Nitrogen Dioxide", new Element(N), new Element(O,2)),
         toluene                                 (4, "Toluene", new Element(C,7), new Element(H,8)),
         potassiumNitrate                (5, "Potassium Nitrate", new Element(K), new Element(N), new Element(O,3)),
-         tnt                                     (6, "Trinitrotoluene",
-                        new Element(C,6),
-                        new Element(H,2),
-                        new Molecule(nitrogenDioxide, 3),
-                        new Molecule(toluene)
-                        ),
-
+         tnt                            (6, "Trinitrotoluene", new Element(C,6), new Element(H,2), new Molecule(nitrogenDioxide, 3), new Molecule(toluene)),
         siliconDioxide                  (7, "Silicon Dioxide", new Element(Si), new Element(O,2)),
         calcite                                 (8, "Calcite", new Element(Ca), new Element(C), new Element(O,3)),
         pyrite                                  (9, "Pyrite", new Element(Fe), new Element(S,2)),
@@ -104,15 +98,12 @@ public enum EnumMolecule {
         ddt                                             (80, "DDT", new Element(C,14), new Element(H,9), new Element(Cl,5)),
         dota                                    (81, "DOTA", new Element(C,16), new Element(H,28), new Element(N,4), new Element(O,8)),
         poison                                  (82, "T-2 Mycotoxin", new Element(C,24), new Element(H,34), new Element(O,9)),
-        xanax                                   (83, "Alprazolam", new Element(C,17), new Element(H,13), new Element(Cl), new Element(N,4)),
-        // Mandrake's polyketides
-        // In nature polyketides are hard to get large amounts of
+        xanax                                   (83, "Alprazolam", new Element(C,17), new Element(H,13), new Element(Cl), new Element(N,4)), 
         pkone                           (84, "Minecraftolide A", new Element(C,13), new Element(H,23), new Element(O,2), new Element(N,1)),
         pktwo                           (85, "Minecraftolide B", new Element(C,14), new Element (H,25), new Element(O,2), new Element(N,2)),
         pkthree                         (86, "Minecraftolide A1", new Element(C,13), new Element(H,23), new Element(O,2), new Element(N,1), new Element(Cl,1)),
         pkfour                          (87, "Minecraftolide B1", new Element(C,21), new Element(H,30), new Element(O,7), new Element(N,2), new Element(P,1)),
         dderm                   (88, "(+)-Discodermolide", new Element(C,33), new Element(H,55), new Element(N,1), new Element(O,8)),
-		//
         salt                                    (89, "Salt", new Element(Na,1), new Element(Cl,1)),
         nhthree                                 (90, "Ammonia", new Element(N,1), new Element(H,3)),
         nod                                     (91, "Nodularin", new Element(C,41), new Element(H,60), new Element(N,8), new Element(O,10)),
@@ -128,7 +119,9 @@ public enum EnumMolecule {
         pal2 (101, "Batrachotoxin", new Element(C,31), new Element(H,42), new Element(N,2), new Element(O,6)),
         ctx (102, "Ciguatoxin CTX 1", new Element(C,60), new Element(H,64), new Element(H,22), new Element(O,19)),
 		ret (103, "Retinol", new Element(C,20), new Element(H,30) , new Element(O)),
-       ;
+		stevenk (104, "Xylitol", new Element(C,5) , new Element(H,12), new Element(O,5)),
+        threedoorsdown (105, "Kryptonite", new Element(C,4), new Element(H,4), new Element(Cl,2), new Element(Kr), new Element(O,2))		
+        ;
        
         public static EnumMolecule[] molecules = values();
         private final String descriptiveName;

@@ -312,6 +312,9 @@ public class MinechemHelper {
                 entityPlayer.addPotionEffect(new PotionEffect(Potion.confusion.getId(), Constants.TICKS_PER_MINUTE * 4, 1));
                 entityPlayer.addPotionEffect(new PotionEffect(Potion.moveSlowdown.getId(), Constants.TICKS_PER_MINUTE * 4, 0));
                 break; 
+		case stevenk:
+		entityPlayer.getFoodStats().addStats(2, .2F);
+		break; 
 	        default:
 		entityPlayer.attackEntityFrom(DamageSource.generic, 5);
 		break;
