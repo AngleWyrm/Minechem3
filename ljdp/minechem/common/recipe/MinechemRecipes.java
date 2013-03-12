@@ -464,25 +464,10 @@ public class MinechemRecipes {
 		DecomposerRecipe.add(new DecomposerRecipe(cocoaBean, molecule(theobromine)));
 		DecomposerRecipe.add(new DecomposerRecipe(pumpkin, molecule(cucurbitacin)));
 		DecomposerRecipe.add(new DecomposerRecipe(watermelon, molecule(cucurbitacin), molecule(asparticAcid), molecule(water,16)));
-		DecomposerRecipe.add(new DecomposerRecipe(glisteningMelon, molecule(water,4), element(Cr)));
+		DecomposerRecipe.add(new DecomposerRecipe(glisteningMelon, molecule(water,4), element(Ti)));
 		DecomposerRecipe.add(new DecomposerRecipe(melon, molecule(water)));
-		Element carbon40 = element(C,40);
-		DecomposerRecipe.add(new DecomposerRecipeSelect(carrot, .05F,
-				new DecomposerRecipe(carbon40, element(H,2)),
-				new DecomposerRecipe(carbon40, element(H,4)),
-				new DecomposerRecipe(carbon40, element(H,8)),
-				new DecomposerRecipe(carbon40, element(H,16)),
-				new DecomposerRecipe(carbon40, element(H,32)),
-				new DecomposerRecipe(carbon40, element(H,64))
-		));
-		DecomposerRecipe.add(new DecomposerRecipeSelect(goldenCarrot, .2F,
-				new DecomposerRecipe(carbon40, element(H,2), element(Au)),
-				new DecomposerRecipe(carbon40, element(H,4), element(Au)),
-				new DecomposerRecipe(carbon40, element(H,8), element(Au)),
-				new DecomposerRecipe(carbon40, element(H,16), element(Au)),
-				new DecomposerRecipe(carbon40, element(H,32), element(Au)),
-				new DecomposerRecipe(carbon40, element(H,64), element(Au))
-		));
+		DecomposerRecipe.add(new DecomposerRecipeSelect(carrot, .05F, molecule(ret)));
+		DecomposerRecipe.add(new DecomposerRecipeSelect(goldenCarrot, .2F, molecule(ret), element(Au,4)));
 		DecomposerRecipe.add(new DecomposerRecipeChance(potato, .4F, molecule(water,8), element(K,2), molecule(cellulose)));
 		DecomposerRecipe.add(new DecomposerRecipeChance(bread, .1F, molecule(starch), molecule(sucrose)));
 		DecomposerRecipe.add(new DecomposerRecipe(appleRed, molecule(malicAcid)));

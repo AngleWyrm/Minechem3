@@ -303,6 +303,10 @@ public class MinechemHelper {
 		case theobromine: // Speed boost from coffie :D 
 		entityPlayer.addPotionEffect(new PotionEffect(Potion.moveSpeed.getId(),   Constants.TICKS_PER_MINUTE * 5, 1));
 		break; 
+		case ret:
+		entityPlayer.addPotionEffect(new PotionEffect(Potion.nightVision.getId(), Constants.TICKS_PER_SECOND * 120, 1));
+		entityPlayer.getFoodStats().addStats(3, .1F);
+		break; 
                 case ctx: 
                 entityPlayer.addPotionEffect(new PotionEffect(Potion.hunger.getId(), Constants.TICKS_PER_MINUTE * 2, 1));
                 entityPlayer.addPotionEffect(new PotionEffect(Potion.confusion.getId(), Constants.TICKS_PER_MINUTE * 4, 1));
