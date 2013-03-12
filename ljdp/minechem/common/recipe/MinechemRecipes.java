@@ -466,8 +466,8 @@ public class MinechemRecipes {
 		DecomposerRecipe.add(new DecomposerRecipe(watermelon, molecule(cucurbitacin), molecule(asparticAcid), molecule(water,16)));
 		DecomposerRecipe.add(new DecomposerRecipe(glisteningMelon, molecule(water,4), element(Ti)));
 		DecomposerRecipe.add(new DecomposerRecipe(melon, molecule(water)));
-		DecomposerRecipe.add(new DecomposerRecipeSelect(carrot, .05F, molecule(ret)));
-		DecomposerRecipe.add(new DecomposerRecipeSelect(goldenCarrot, .2F, molecule(ret), element(Au,4)));
+		DecomposerRecipe.add(new DecomposerRecipeChance(carrot, .05F, molecule(ret)));
+		DecomposerRecipe.add(new DecomposerRecipeChance(goldenCarrot, .2F, molecule(ret), element(Au,4)));
 		DecomposerRecipe.add(new DecomposerRecipeChance(potato, .4F, molecule(water,8), element(K,2), molecule(cellulose)));
 		DecomposerRecipe.add(new DecomposerRecipeChance(bread, .1F, molecule(starch), molecule(sucrose)));
 		DecomposerRecipe.add(new DecomposerRecipe(appleRed, molecule(malicAcid)));
