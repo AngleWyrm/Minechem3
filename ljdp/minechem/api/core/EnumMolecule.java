@@ -44,7 +44,7 @@ public enum EnumMolecule {
         hydroxide                               (20, "Hydroxide (ion)", new Element(O), new Element(H)),
         ammonium                                (21, "Ammonium (ion)", new Element(N), new Element(H,4)),
         hydronium                               (22, "Hydronium (ion)", new Element(H,3), new Element(O)),
-        peroxide                                (23, "Hydrogen Peroxide", new Element(H,2) new Element(O,2)),
+        peroxide                                (23, "Hydrogen Peroxide", new Element(H,2), new Element(O,2)),
         calciumOxide                    (24, "Calcium Oxide", new Element(Ca), new Element(O)),
         calciumCarbonate                (25, "Calcium Carbonate", new Element(Ca), new Molecule(carbonate)),
         magnesiumCarbonate              (26, "Magnesium Carbonate", new Element(Mg), new Molecule(carbonate)),
